@@ -3,22 +3,42 @@
 }
 
 :root {
-  --primary: crimson;
-  --secondary: #666;
-  --text: #999;
+  --primary: orange;
+  --secondary: orange;
+  --text: #ddd;
+  --background: #222;
 }
 
 body {
-  font-family: 'Roboto Slab', sans-serif;
+  margin: 20px;
+  background-color: var(--background);
+  font-family: 'Raleway', sans-serif;
   font-size: 112.5%;
+  font-weight: 300;
   line-height: 1.4;
   color: var(--text);
-  margin: 0px;
-  background-color: #eee;
+  text-align: left;
+}
+
+h1 {
+  font-weight: 300;
+  color: var(--primary);
+  margin: 10px;
+  text-align: right;
+}
+
+h2 {
+  color: var(--secondary);
+  font-weight: 300;
+}
+
+h3 {
+  color: var(--secondary);
+  font-weight: 300;
 }
 
 a {
-  text-decoration: underline solid 1px var(--primary);
+  text-decoration: underline dotted 1px var(--secondary);
   color: var(--secondary);
 }
 
@@ -28,27 +48,27 @@ textarea {
   font-size: inherit;
 }
 
+dt {
+  font-weight: 300;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
 .navi {
   font-weight: 300;
   color: var(--secondary);
-  margin: -10px 10px 10px 10px;
+  margin: -10px 10px 70px 10px;
   text-align: right;
-}
-
-h1 {
-  font-weight: 700;
-  color: var(--primary);
-  margin: 10px;
-  text-align: right;
-}
-
-h2 {
-  color: var(--secondary);
-  font-style: ;
 }
 
 .page-main {
   display: grid;
   grid-gap: 40px;
-  place-items: center;
+}
+
+.italic {
+  font-style: italic;
 }
