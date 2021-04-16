@@ -3,10 +3,10 @@
 }
 
 :root {
-  --primary: orange;
-  --secondary: orange;
-  --text: #ddd;
-  --background: #222;
+  --primary: rgb(165, 107, 0);
+  --secondary: rgb(165, 107, 0);
+  --text: #333;
+  --background: #fff;
 }
 
 body {
@@ -55,6 +55,33 @@ dt {
 footer {
   text-align: center;
   margin-top: 50px;
+}
+
+.grid-about {
+  grid-template-areas:
+    'professional personal'
+    'bio          bio';
+}
+
+@media (max-width: 600px) {
+  .grid-about {
+    grid-template-areas:
+      'professional'
+      'personal'
+      'bio';
+  }
+}
+
+.about-professional {
+  grid-area: professional;
+}
+
+.about-personal {
+  grid-area: personal;
+}
+
+.about-bio {
+  grid-area: bio;
 }
 
 .navi {
