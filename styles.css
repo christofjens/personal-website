@@ -79,3 +79,6 @@
   display: flex;
   grid-area: abw;
 }
+
+@media (min-width: 600px) {
+}
