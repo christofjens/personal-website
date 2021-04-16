@@ -1,21 +1,81 @@
-.header {
-  grid-area: hd;
+.g-title {
+  grid-area: ttl;
 }
-.footer {
-  grid-area: ft;
+
+.g-nav {
+  grid-area: nav;
 }
-.content {
-  grid-area: main;
+
+.g-portrait {
+  grid-area: por;
 }
-.sidebar {
-  grid-area: sd;
+
+.g-about {
+  grid-area: abt;
 }
-.wrapper {
+
+.f-professional {
+  flex: 33%;
+}
+
+.f-personal {
+  flex: 33%;
+}
+
+.g-bio {
+  grid-area: bio;
+}
+
+.g-cv-headline {
+  grid-area: cvh;
+}
+
+.g-cv-content {
+  grid-area: cvc;
+}
+
+.g-contact-headline {
+  grid-area: coh;
+}
+
+.g-contact-content {
+  grid-area: coc;
+  display: flex;
+}
+
+.f-phone {
+  flex: 25%;
+  width: 40px;
+}
+
+.f-mail {
+  flex: 25%;
+}
+
+.f-git {
+  flex: 25%;
+}
+
+.f-pen {
+  flex: 25%;
+}
+
+.all-g-wrapper {
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-auto-rows: minmax(100px, auto);
   grid-template-areas:
-    'hd hd hd hd   hd   hd   hd   hd   hd'
-    'sd sd sd main main main main main main'
-    'ft ft ft ft   ft   ft   ft   ft   ft';
+    'ttl'
+    'nav'
+    'por'
+    'abt'
+    'abw'
+    'bio'
+    'cvh'
+    'cvc'
+    'coh'
+    'coc';
+}
+
+.about-f-wrapper {
+  display: flex;
+  grid-area: abw;
 }

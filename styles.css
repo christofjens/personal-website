@@ -1,101 +1,81 @@
-* {
-  box-sizing: border-box;
+.g-title {
+  grid-area: ttl;
 }
 
-:root {
-  --primary: rgb(165, 107, 0);
-  --secondary: rgb(165, 107, 0);
-  --text: #333;
-  --background: #fff;
+.g-nav {
+  grid-area: nav;
 }
 
-body {
-  margin: 20px;
-  background-color: var(--background);
-  font-family: 'Raleway', sans-serif;
-  font-size: 112.5%;
-  font-weight: 300;
-  line-height: 1.4;
-  color: var(--text);
-  text-align: left;
+.g-portrait {
+  grid-area: por;
 }
 
-h1 {
-  font-weight: 300;
-  color: var(--primary);
-  margin: 10px;
-  text-align: right;
+.g-about {
+  grid-area: abt;
 }
 
-h2 {
-  color: var(--secondary);
-  font-weight: 300;
+.f-professional {
+  flex: 33%;
 }
 
-h3 {
-  color: var(--secondary);
-  font-weight: 300;
+.f-personal {
+  flex: 33%;
 }
 
-a {
-  text-decoration: underline dotted 1px var(--secondary);
-  color: var(--secondary);
-}
-
-input,
-button,
-textarea {
-  font-size: inherit;
-}
-
-dt {
-  font-weight: 300;
-}
-
-footer {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.grid-about {
-  grid-template-areas:
-    'professional personal'
-    'bio          bio';
-}
-
-@media (max-width: 600px) {
-  .grid-about {
-    grid-template-areas:
-      'professional'
-      'personal'
-      'bio';
-  }
-}
-
-.about-professional {
-  grid-area: professional;
-}
-
-.about-personal {
-  grid-area: personal;
-}
-
-.about-bio {
+.g-bio {
   grid-area: bio;
 }
 
-.navi {
-  font-weight: 300;
-  color: var(--secondary);
-  margin: -10px 10px 70px 10px;
-  text-align: right;
+.g-cv-headline {
+  grid-area: cvh;
 }
 
-.page-main {
+.g-cv-content {
+  grid-area: cvc;
+}
+
+.g-contact-headline {
+  grid-area: coh;
+}
+
+.g-contact-content {
+  grid-area: coc;
+  display: flex;
+}
+
+.f-phone {
+  flex: 25%;
+  width: 40px;
+}
+
+.f-mail {
+  flex: 25%;
+}
+
+.f-git {
+  flex: 25%;
+}
+
+.f-pen {
+  flex: 25%;
+}
+
+.all-g-wrapper {
   display: grid;
-  grid-gap: 40px;
+  grid-template-areas:
+    'ttl'
+    'nav'
+    'por'
+    'abt'
+    'abw'
+    'bio'
+    'cvh'
+    'cvc'
+    'coh'
+    'coc';
 }
 
-.italic {
-  font-style: italic;
+.about-f-wrapper {
+  display: flex;
+  grid-area: abw;
 }

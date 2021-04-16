@@ -4,49 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Christof Jens</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <title>Document</title>
+    <link rel="stylesheet" href="grid-styles.css" />
   </head>
-
   <body>
-    <header>
-      <h1>Christof Jens</h1>
-      <nav class="navi">
+    <div class="all-g-wrapper">
+      <div class="g-title"><h1>Christof Jens</h1></div>
+      <div class="g-nav">
         <a href="#about">About/CV</a> <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <main>
-      <section id="headshot">
+      </div>
+      <div class="g-por">
         <img src="./images/head.jpeg" alt="" style="width: 100%" />
-      </section>
-      <section>
-        <div class="grid-about">
-          <div class="about-professional">
-            <h2>About</h2>
-            <h3>Professional</h3>
-            #Photoshop #Indesign #Illustrator #Premiere #DavinciResolve
-          </div>
-          <div class="about-personal">
-            <h3>Personal</h3>
-            #Family #Kayaking #Hiking #Bicycles #Thelittlethings
-          </div>
-          <div class="about-bio">
-            <h3>Bio</h3>
-            Birth Kindergardener Pupil Screendesigner Backpacker TV Production
-            Assistant TV Unit Manager Student Marketing Manager Project Manager
-            Dad Student t.b.c.
-          </div>
+      </div>
+      <div class="g-about"><h2>About</h2></div>
+      <div class="about-f-wrapper">
+        <div class="f-professional">
+          <h3>Professional</h3>
+          #Photoshop #Indesign #Illustrator #Premiere #DavinciResolve
         </div>
-      </section>
-
-      <section id="cv">
-        <h2>CV</h2>
+        <div class="f-personal">
+          <h3>Personal</h3>
+          #Family #Kayaking #Hiking #Bicycles #Thelittlethings
+        </div>
+      </div>
+      <div class="g-bio">
+        <h3>Bio</h3>
+        <ul>Birth Kindergardener Pupil Screendesigner Backpacker TV Production
+        Assistant TV Unit Manager Student Marketing Manager Project Manager Dad
+        Student t.b.c.
+      </div>
+      <div class="g-cv-headline"><h2>CV</h2></div>
+      <div class="g-cv-content">
         <dl>
           <dt>Print- and Screendesign</dt>
           <dd>various Agencies (2001-2007)</dd>
@@ -63,39 +51,37 @@
           <dt>Project Manager</dt>
           <dd>Landkreis Lüchow-Dannenberg (2018-2020)</dd>
         </dl>
-      </section>
-
-      <section id="contact">
-        <h2>Contact</h2>
+      </div>
+      <div class="g-contact-headline"><h2>Contact</h2></div>
+      <div class="g-contact-content">
         <img
           src="./images/phoneicon.png"
           alt=""
-          style="width: 40px; height: auto"
+          style="width: 40px; height: auto" class="f-phone"
         />
         <a href="tel:+4917612345678" rel="noopener noreferrer"
-          >+49 176 12345678</a
-        ><br />
+          ></a
+        >
         <img
           src="./images/mailicon.png"
           alt=""
-          style="width: 40px; height: auto"
+          style="width: 40px; height: auto" class="f-mail"
         />
-        <a href="mailto:christof@jensgmail.com">christofjens[at]gmail.com</a
-        ><br />
+        <a href="mailto:christof@jensgmail.com"></a
+        >
         <img
           src="./images/githubicon.png"
           alt=""
-          style="width: 40px; height: auto"
+          style="width: 32px; height: auto" class="f-git"
         />
-        <a href="github.com/christofjens">github.com/christofjens</a><br />
+        <a href="github.com/christofjens"></a><br />
         <img
           src="./images/codepenicon.png"
           alt=""
-          style="width: 40px; height: auto"
+          style="width: 40px; height: auto" class="f-pen"
         />
-        <a href="codepen.io/christofjens">codepen.io/christofjens</a>
-      </section>
-    </main>
-    <footer>Take care! ✌️</footer>
+        <a href="codepen.io/christofjens"></a>
+      </div>
+    </div>
   </body>
 </html>
