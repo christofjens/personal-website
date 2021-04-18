@@ -41,13 +41,6 @@ h3 {
   margin: 35px 0px 35px 0px;
 }
 
-a {
-  text-decoration: none;
-  font-weight: 500;
-  color: var(--secondary);
-  border-bottom: 1px var(--secondary) solid;
-}
-
 hr {
   border: none;
   border-bottom: 0.5px solid var(--secondary);
