@@ -1,21 +1,99 @@
+:root {
+  --primary: teal;
+  --secondary: teal;
+  --text: #333;
+  --bgcolor: white;
+  --headline-bg: white;
+  --font-headlines: 'Zilla Slab', sans-serif;
+  --font-text: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  font-family: var(--font-text);
+  font-size: 112.5%;
+  line-height: 1.5;
+  padding: 0px 20px;
+  margin: 0px;
+  color: var(--text);
+  background-color: var(--bgcolor);
+}
+
+h1 {
+  font-family: var(--font-headlines);
+  color: var(--primary);
+  line-height: 1;
+  margin: 50px 0px 0px 0px;
+}
+
+h2 {
+  font-family: var(--font-headlines);
+  color: var(--secondary);
+  text-align: center;
+  background-color: var(--headline-bg);
+  margin: 70px 0px 35px 0px;
+}
+
+h3 {
+  font-family: var(--font-headlines);
+  color: var(--secondary);
+  text-align: center;
+  background-color: var(--headline-bg);
+  margin: 35px 0px 35px 0px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--secondary);
+  border-bottom: 1px var(--secondary) solid;
+}
+
+hr {
+  border: none;
+  border-bottom: 0.5px solid var(--secondary);
+  width: 50%;
+  overflow: visible;
+  text-align: center;
+  height: 70px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+dl {
+  margin: 0px;
+}
+
+dd {
+  margin: 0px 0px 30px 40px;
+}
+
 .g-title {
   grid-area: ttl;
+  text-align: center;
 }
 
 .g-nav {
   grid-area: nav;
+  margin: 0px 0px 50px;
+  text-align: center;
 }
 
 .g-portrait {
   grid-area: por;
+  text-align: center;
 }
 
 .g-about {
   grid-area: abt;
+  text-align: center;
 }
 
 .f-professional {
   flex: 33%;
+  margin: 0px 20px 0px 0px;
 }
 
 .f-personal {
@@ -41,34 +119,35 @@
 .g-contact-content {
   grid-area: coc;
   display: flex;
+  margin: 0px 0px 70px 0px;
 }
 
 .f-phone {
   flex: 25%;
-  width: 40px;
+  text-align: center;
 }
 
 .f-mail {
   flex: 25%;
+  text-align: center;
 }
 
 .f-git {
   flex: 25%;
+  text-align: center;
 }
 
 .f-pen {
   flex: 25%;
+  text-align: center;
 }
 
 .all-g-wrapper {
   display: grid;
   grid-template-areas:
-    'ttl'
-    'nav'
-    'por'
+    'ptn'
     'abt'
     'abw'
-    'bio'
     'cvh'
     'cvc'
     'coh'
@@ -80,5 +159,32 @@
   grid-area: abw;
 }
 
-@media (min-width: 600px) {
+.header-f-wrapper {
+  display: flex;
+  grid-area: ptn;
+  justify-content: space-evenly;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+@media (min-width: 630px) {
+  body {
+    width: 600px;
+    font-family: var(--font-text);
+    font-size: 112.5%;
+    line-height: 1.5;
+    margin: auto;
+    padding: 0px 20px;
+    color: var(--text);
+    background-color: var(--bgcolor);
+    box-shadow: 0px 0px 15px 5px #cccccc;
+  }
+}
+
+.portrait {
+  border-radius: 0% 0% 50% 50%;
+  border: var(--secondary) 0.5px solid;
+  margin: -1px 0px 0px 0px;
 }
