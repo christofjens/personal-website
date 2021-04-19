@@ -53,6 +53,8 @@ hr {
 ul {
   list-style-type: none;
   padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 dl {
