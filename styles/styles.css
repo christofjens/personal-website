@@ -1,0 +1,130 @@
+@import 'styles/base.css';
+
+:root {
+  --primary: teal;
+  --secondary: teal;
+  --text: #333;
+  --bgcolor: white;
+  --headline-bg: white;
+  --font-headlines: 'Zilla Slab', sans-serif;
+  --font-text: 'Source Sans Pro', sans-serif;
+}
+
+.g-title {
+  grid-area: ttl;
+  text-align: center;
+}
+
+.g-nav {
+  grid-area: nav;
+  margin: 0px 0px 50px;
+  text-align: center;
+}
+
+.g-portrait {
+  grid-area: por;
+  text-align: center;
+}
+
+.g-about {
+  grid-area: abt;
+  text-align: center;
+}
+
+.f-professional {
+  flex: 33%;
+  margin: 0px 20px 0px 0px;
+}
+
+.f-personal {
+  flex: 33%;
+}
+
+.g-bio {
+  grid-area: bio;
+}
+
+.g-cv-headline {
+  grid-area: cvh;
+}
+
+.g-cv-content {
+  grid-area: cvc;
+}
+
+.g-contact-headline {
+  grid-area: coh;
+}
+
+.g-contact-content {
+  grid-area: coc;
+  display: flex;
+  margin: 0px 0px 70px 0px;
+}
+
+.f-phone {
+  flex: 25%;
+  text-align: center;
+}
+
+.f-mail {
+  flex: 25%;
+  text-align: center;
+}
+
+.f-git {
+  flex: 25%;
+  text-align: center;
+}
+
+.f-pen {
+  flex: 25%;
+  text-align: center;
+}
+
+.all-g-wrapper {
+  display: grid;
+  grid-template-areas:
+    'ptn'
+    'abt'
+    'abw'
+    'cvh'
+    'cvc'
+    'coh'
+    'coc';
+}
+
+.about-f-wrapper {
+  display: flex;
+  grid-area: abw;
+}
+
+.header-f-wrapper {
+  display: flex;
+  grid-area: ptn;
+  justify-content: space-evenly;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+@media (min-width: 630px) {
+  body {
+    width: 600px;
+    font-family: var(--font-text);
+    font-size: 112.5%;
+    line-height: 1.5;
+    margin: auto;
+    padding: 0px 20px;
+    color: var(--text);
+    background-color: var(--bgcolor);
+    box-shadow: 0px 0px 5px 5px #00000015;
+  }
+}
+
+.portrait {
+  border-radius: 0% 0% 50% 50%;
+  border: var(--secondary) 0.5px solid;
+  margin: -1px 0px 0px 0px;
+}
