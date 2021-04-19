@@ -1,0 +1,11 @@
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-tracks: center;
+}
+
+.portrait {
+  border-radius: 0% 0% 50% 50%;
+  border: var(--secondary) 0.5px solid;
+  margin: -1px 0px 0px 0px;
+}
