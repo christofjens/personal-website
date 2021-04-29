@@ -1,6 +1,6 @@
 .flex {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-tracks: center;
 }
 
@@ -8,4 +8,9 @@
   border-radius: 0% 0% 50% 50%;
   border: var(--secondary) 0.5px solid;
   margin: -1px 0px 0px 0px;
+}
+
+.footer__image {
+  width: 48px;
+  margin-bottom: 50px;
 }
